@@ -1,0 +1,4 @@
+*.log
+main
+threshold-notification
+.env

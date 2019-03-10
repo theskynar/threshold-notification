@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: notification
+      POSTGRES_USER: notification
+      POSTGRES_PASSWORD: skynar12345
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
